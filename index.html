@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Bloc Designer Track Portfolios</title>
+
+    <!-- Favicon
+    <link rel="shortcut icon" type="image/x-icon" href=""> -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- photo for social
+    <meta property="og:image" content=""/> -->
+
+  </head>
+  <body>
+    <header>
+      <div class="bloc-header">
+        <div class="header-one-half-left">
+          <div id="logo"><img src="assets/bloc-logo.png" alt="Bloc logo"></div>
+          <div class="header-links">
+            <a href="#"><h3>Programs</h3></a>
+            <a href="#"><h3>Alumni</h3></a>
+            <a href="#"><h3>Blog</h3></a>
+          </div>
+        </div>
+        <div class="header-one-half-right">
+          <div class="log-in-link">
+            <a href="#"><h3>Log In</h3></a>
+          </div>
+          <div class="enroll-button"><h3>Enroll Now</h3></div>
+        </div>
+      </div>
+    </header>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+
+      function hasTouch() {
+        return 'ontouchstart' in document.documentElement
+           || navigator.maxTouchPoints > 0
+           || navigator.msMaxTouchPoints > 0;
+         }
+
+      // disable hover states on touch based devices
+
+      if (hasTouch()) { // remove all :hover stylesheets
+        try { // prevent exception on browsers not supporting DOM styleSheets properly
+          for (var si in document.styleSheets) {
+            var styleSheet = document.styleSheets[si];
+            if (!styleSheet.rules) continue;
+
+            for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+                if (!styleSheet.rules[ri].selectorText) continue;
+
+                if (styleSheet.rules[ri].selectorText.match(':hover')) {
+                    styleSheet.deleteRule(ri);
+                }
+             }
+          }
+        } catch (ex) {}
+      }
+
+    </script>
+
+
+  </body>
+</html>
