@@ -305,7 +305,6 @@ p {
 
 .individual-portfolio-student-photo img {
   height: 75px;
-  width: auto;
 }
 
 .individual-portfolio-screenshot {
@@ -316,15 +315,34 @@ p {
 
 .individual-portfolio-screenshot img {
   height: 206.8px;
-  width: auto;
 }
 
 .individual-portfolio-info {
-  height: 62px;
+  height: 110px;
   width: 310px;
   border-right: 2px solid #CBEBCB;
   border-bottom: 2px solid #CBEBCB;
   border-left: 2px solid #CBEBCB;
+}
+
+.individual-portfolio-info h3 {
+  font-size: 18px;
+  color: #4D4F4D;
+  padding: 6px 0 0 20px;
+}
+
+.individual-portfolio-city {
+  font-size: 16px;
+  color: #77B6AA;
+  padding-left: 20px;
+}
+
+.individual-portfolio-type {
+  font-size: 14px;
+  letter-spacing: 18%;
+  text-transform: uppercase;
+  color: #3537E6;
+  padding: 12px 0 0 20px;
 }
 
 @media (min-width: 768px) {
@@ -347,12 +365,11 @@ p {
     height: 226.46px;
   }
   .individual-portfolio-info {
-    height: 68px;
     width: 340px;
   }
 }
 
-@media (min-width: 1255px) {
+@media (min-width: 950px) {
   .more-portfolios-layout {
     width: auto;
     max-width: 1639px;
