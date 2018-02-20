@@ -18,7 +18,7 @@ body {
 h1 {
   font-size: 40px;
   line-height: 41px;
-  font-family: "Circular Std", sans-serif;
+  font-family: "Circular Std", "Questrial", sans-serif;
   font-style: Black;
   color: #3537E6;
   margin: 0;
@@ -27,7 +27,7 @@ h1 {
 h2 {
   font-size: 30px;
   line-height: 38px;
-  font-family: "Circular Std", sans-serif;
+  font-family: "Circular Std", "Questrial", sans-serif;
   font-style: Black;
   color: #3537E6;
   margin: 0;
@@ -36,7 +36,7 @@ h2 {
 h3 {
   font-size: 24px;
   line-height: 39px;
-  font-family: "Circular Std", sans-serif;
+  font-family: "Circular Std", "Questrial", sans-serif;
   font-style: Bold;
   color: #fff;
   margin: 0;
@@ -45,7 +45,7 @@ h3 {
 h4 {
   font-size: 16px;
   line-height: 18px;
-  font-family: "Circular Std", sans-serif;
+  font-family: "Circular Std", "Questrial", sans-serif;
   font-style: Medium;
   color: #4D4F4D;
   margin: 0;
@@ -53,6 +53,7 @@ h4 {
 
 p {
   margin: 0;
+  font-family: "Circular Std", "Questrial", sans-serif;
 }
 
 
@@ -177,7 +178,6 @@ p {
 }
 
 .featured-portfolio-mobile-info p {
-  font-family: "Circular Std", sans-serif;
   font-style: Medium;
   text-align: left;
   color: #fff;
@@ -255,6 +255,7 @@ p {
 @media (min-width: 768px) {
   .more-portfolios-section-title {
     background: #fff;
+    padding-left: 64px;
   }
   .more-portfolios-section-title h2 {
     font-size: 48px;
@@ -275,27 +276,16 @@ p {
 
 .more-portfolios-layout {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   padding-top: 40px;
   padding-bottom: 40px;
-  width: 316px;
+  width: 345px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .individual-portfolio {
-  width: 316px;
-  padding-top: 18px;
-  padding-bottom: 18px;
-}
-
-.flex-start {
-  align-self: flex-start;
-}
-
-.flex-end {
-  align-self: flex-end;
+  padding: 18px 0;
 }
 
 .individual-portfolio-student-photo {
@@ -311,8 +301,7 @@ p {
 }
 
 .individual-portfolio-student-photo img {
-  height: 100%;
-  min-height: 75px;
+  height: 75px;
   width: auto;
 }
 
@@ -325,12 +314,52 @@ p {
 .individual-portfolio-screenshot img {
   height: 206.8px;
   width: auto;
-  overflow: hidden;
+}
+
+.individual-portfolio-info {
+  height: 62px;
+  width: 310px;
+  border-right: 2px solid #CBEBCB;
+  border-bottom: 2px solid #CBEBCB;
+  border-left: 2px solid #CBEBCB;
 }
 
 @media (min-width: 768px) {
   .more-portfolios-layout {
-    width: 1196px;
+    padding-top: 0;
+  }
+  .individual-portfolio-student-photo {
+    width: 88px;
+    height: 88px;
+    margin-bottom: -37px;
+  }
+  .individual-portfolio-student-photo img {
+    min-height: 88px;
+  }
+  .individual-portfolio-screenshot {
+    width: 344px;
+    height: 226.46px;
+  }
+  .individual-portfolio-screenshot img {
+    height: 226.46px;
+  }
+  .individual-portfolio-info {
+    height: 68px;
+    width: 340px;
+  }
+}
+
+@media (min-width: 1255px) {
+  .more-portfolios-layout {
+    width: auto;
+    max-width: 1639px;
+    margin-left: 64px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .individual-portfolio {
+    padding-right: 64px;
   }
 }
 
