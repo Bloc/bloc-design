@@ -11,23 +11,49 @@ ul {
     left: 0;
 }
 
+body {
+  margin: 0;
+}
+
 h1 {
   font-size: 40px;
   line-height: 41px;
   font-family: "Circular Std", sans-serif;
   font-style: Black;
   color: #3537E6;
+  margin: 0;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 38px;
+  font-family: "Circular Std", sans-serif;
+  font-style: Black;
+  color: #3537E6;
+  margin: 0;
 }
 
 h3 {
+  font-size: 24px;
+  line-height: 39px;
+  font-family: "Circular Std", sans-serif;
+  font-style: Bold;
+  color: #fff;
+  margin: 0;
+}
+
+h4 {
   font-size: 16px;
   line-height: 18px;
   font-family: "Circular Std", sans-serif;
   font-style: Medium;
   color: #4D4F4D;
+  margin: 0;
 }
 
-
+p {
+  margin: 0;
+}
 
 
 
@@ -69,7 +95,7 @@ h3 {
   padding:0 0 10px 60px;
 }
 
-.header-links h3 {
+.header-links h4 {
   display: none;
 }
 
@@ -80,13 +106,12 @@ h3 {
 .enroll-button {
   width: 122px;
   height: 44px;
-  margin-top: 4px;
   background-color: #F3B64F;
   border-radius: 3px;
   float: right;
 }
 
-.enroll-button h3 {
+.enroll-button h4 {
   color: #fff;
   text-align: center;
   padding-top: 12px;
@@ -103,12 +128,14 @@ h3 {
     width: 200px;
     margin-right: 64px;
   }
-  .header-links h3 {
+  .header-links h4 {
     display: inline-block;
     padding-right: 36px;
+    margin-top: 12px;
   }
   .log-in-link {
     display: -webkit-inline-box;
+    margin-top: 12px;
   }
 }
 
@@ -127,6 +154,7 @@ h3 {
 .featured-portfolios-section-title {
   width: 233px;
   margin-left: 30px;
+  padding: 20px 0 70px 0;
 }
 
 .featured-portfolio img {
@@ -138,14 +166,43 @@ h3 {
 .featured-portfolio-mobile-info {
   display: block;
   background-color: #3537E6;
-  height: 106px;
-  width: 100%;
+  height: 120px;
+  padding-left: 30px;
+}
+
+.featured-portfolio-mobile-info h3 {
+  width: 90%;
+  padding-top: 10px;
+  margin-bottom: -6px;
+}
+
+.featured-portfolio-mobile-info p {
+  font-family: "Circular Std", sans-serif;
+  font-style: Medium;
+  text-align: left;
+  color: #fff;
+  width: 90%;
+  margin-top: 10px;
+}
+
+.featured-portfolio-mobile-city p {
+  font-size: 17px;
+}
+
+.featured-portfolio-mobile-type {
+  text-transform: uppercase;
+}
+
+.featured-portfolio-mobile-type p {
+  font-size: 16px;
+  padding-bottom: 15px;
 }
 
 @media (min-width: 768px) {
   .featured-portfolios-section-title {
-    width: 760px;
+    width: 650px;
     margin-left: 64px;
+    padding: 60px 0 120px 0;
   }
   .featured-portfolios-section-title h1 {
     font-size: 95px;
@@ -161,11 +218,124 @@ h3 {
   }
 }
 
+@media (min-width: 950px) {
+  .featured-portfolios-section-title {
+    width: 760px;
+  }
+}
+
 @media (min-width: 2160px) {
   .featured-portfolios-section {
     max-width: 2160px;
   }
   .featured-portfolio {
     max-width: 720px;
+  }
+}
+
+
+/* More portfolios section title */
+
+.more-portfolios-section {
+  position: relative;
+  clear: both;
+  display: block;
+}
+
+.more-portfolios-section-title {
+  padding: 40px 0 40px 30px;
+  background: #3537E6;
+}
+
+.more-portfolios-section-title h2 {
+  color: #fff;
+  width: 317px;
+}
+
+@media (min-width: 768px) {
+  .more-portfolios-section-title {
+    background: #fff;
+  }
+  .more-portfolios-section-title h2 {
+    font-size: 48px;
+    line-height: 66px;
+    color: #3537E6;
+    width: 650px;
+  }
+}
+
+@media (min-width: 950px) {
+  .more-portfolios-section-title h2 {
+    width: 851px;
+  }
+}
+
+
+/* More portfolios section content */
+
+.more-portfolios-layout {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 316px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.individual-portfolio {
+  width: 316px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.flex-start {
+  align-self: flex-start;
+}
+
+.flex-end {
+  align-self: flex-end;
+}
+
+.individual-portfolio-student-photo {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  position:relative;
+  z-index:1;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -37px;
+}
+
+.individual-portfolio-student-photo img {
+  height: 100%;
+  min-height: 75px;
+  width: auto;
+}
+
+.individual-portfolio-screenshot {
+  width: 314px;
+  height: 206.8px;
+  overflow: hidden;
+}
+
+.individual-portfolio-screenshot img {
+  height: 206.8px;
+  width: auto;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .more-portfolios-layout {
+    width: 1196px;
+  }
+}
+
+@media (min-width: 2160px) {
+  .more-portfolios-layout {
+    width: 1639px;
   }
 }
