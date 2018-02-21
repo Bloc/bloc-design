@@ -160,6 +160,10 @@ p {
   padding: 20px 0 70px 0;
 }
 
+.featured-portfolios-section {
+  background: url(../assets/featured-portfolio-background.png);
+}
+
 .featured-portfolio {
   position: relative;
 }
@@ -381,6 +385,36 @@ p {
   padding: 12px 0 0 20px;
 }
 
+.page-buttons-container {
+  height: 104px;
+  width: 100%;
+  max-width: 1639px;
+}
+
+.portfolio-page-button {
+  width: 122px;
+  height: 44px;
+  background-color: #3537E6;
+  border-radius: 3px;
+}
+
+.portfolio-page-button h4 {
+  color: #fff;
+  text-align: center;
+  padding-top: 12px;
+  margin: 0 0;
+}
+
+.previous-button {
+  float: left;
+  margin-left: 30px;
+}
+
+.next-button {
+  float: right;
+  margin-right: 30px;
+}
+
 @media (min-width: 768px) {
   .more-portfolios-layout {
     padding-top: 0;
@@ -402,6 +436,15 @@ p {
   }
   .individual-portfolio-info {
     width: 344px;
+  }
+  .page-buttons-container {
+    height: 144px;
+  }
+  .previous-button {
+    margin-left: 64px;
+  }
+  .next-button {
+    margin-right: 64px;
   }
 }
 
@@ -559,6 +602,15 @@ p {
  -webkit-font-smoothing: antialiased;
 }
 
+.tc--white-base{
+  color:#FFFFFF;
+  font-family: "Circular Book", "Questrial", sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+  text-rendering: optimizeLegibility;
+ -webkit-font-smoothing: antialiased;
+}
+
 .ls--2-5{letter-spacing:2.5px}
 
 .fs--12{font-size:0.8rem}.fw--bold{font-family:"Circular Bold", Questrial, Helvetica, sans-serif}
@@ -712,12 +764,3 @@ p {
 .m-right--0{margin-right:0}
 
 .p-right--0{padding-right:0}
-
-.tc--white-base{
-  color:#FFFFFF;
-  font-family: "Circular Book", "Questrial", sans-serif;
-  font-size: 15px;
-  line-height: 22px;
-  text-rendering: optimizeLegibility;
- -webkit-font-smoothing: antialiased;
-}
