@@ -1,3 +1,30 @@
+/* Circular Book */
+@font-face {
+  font-family: "Circular Book";
+  src: url("lineto-circular-book.eot");
+  src: url("lineto-circular-book.eot?#iefix") format("embedded-opentype"), url("lineto-circular-book.woff2") format("woff2"), url("lineto-circular-book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Circular Book Italic */
+@font-face {
+  font-family: "Circular Book Italic";
+  src: url("lineto-circular-bookitalic.eot");
+  src: url("lineto-circular-bookitalic.eot?#iefix") format("embedded-opentype"), url("lineto-circular-bookitalic.woff2") format("woff2"), url("lineto-circular-bookitalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Circular Bold */
+@font-face {
+  font-family: "Circular Bold";
+  src: url("lineto-circular-bold.eot");
+  src: url("lineto-circular-bold.eot?#iefix") format("embedded-opentype"), url("lineto-circular-bold.woff2") format("woff2"), url("lineto-circular-bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 ul {
     -webkit-margin-after: 0;
     -webkit-margin-before: 0;
@@ -235,6 +262,10 @@ p {
     height: 100%;
     background: #4D4F4D;
     opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
   .overlay-link:hover .overlay {
     opacity: .9;
@@ -343,6 +374,10 @@ p {
   border-top: 2px solid #3537E6;
   border-right: 2px solid #3537E6;
   border-left: 2px solid #3537E6;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .individual-portfolio-screenshot img {
@@ -363,6 +398,10 @@ p {
   border-right: 2px solid #3537E6;
   border-bottom: 2px solid #3537E6;
   border-left: 2px solid #3537E6;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .individual-portfolio-info h3 {
@@ -613,7 +652,7 @@ p {
 
 .ls--2-5{letter-spacing:2.5px}
 
-.fs--12{font-size:0.8rem}.fw--bold{font-family:"Circular Bold", Questrial, Helvetica, sans-serif}
+.fs--12{font-size:0.8rem}.fw--bold{font-family:"Circular Bold", "Questrial", Helvetica, sans-serif}
 
 .d--block{display:block}
 
