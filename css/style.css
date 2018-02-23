@@ -516,7 +516,7 @@ p {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
   .more-portfolios-section-title {
     max-width: 2160px;
     padding-left: 0;
@@ -720,6 +720,15 @@ p {
   .individual-portfolio {
     padding-right: 64px;
   }
+}
+
+@media (min-width: 1550px) {
+  .more-portfolios-layout {
+    max-width: 1639px;
+  }
+}
+
+@media (min-width: 1750px) {
   .previous-button {
     margin-left: 0;
   }
@@ -729,12 +738,6 @@ p {
   .page-buttons-container {
     margin-right: auto;
     margin-left: auto;
-  }
-}
-
-@media (min-width: 1550px) {
-  .more-portfolios-layout {
-    max-width: 1639px;
   }
 }
 
