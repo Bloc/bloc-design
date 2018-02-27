@@ -158,7 +158,7 @@ p {
     background: #fff;
     z-index: -2;
     width: 100%;
-    height: 1750px;
+    height: 1500px;
     margin-top: -800px;
   }
 
@@ -230,11 +230,21 @@ p {
   z-index: 1;
 }
 
+.mobile-info-background {
+  z-index: -1;
+  mix-blend-mode: color-burn;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  display: block;
+}
+
 .featured-portfolio-mobile-info {
   display: block;
   background-color: #3537E6;
   height: 120px;
   padding-left: 30px;
+  z-index: -2;
 }
 
 .featured-portfolio-mobile-info h3 {
@@ -289,6 +299,9 @@ p {
     overflow: hidden;
   }
   .featured-portfolio-mobile-info {
+    display: none;
+  }
+  .mobile-info-background {
     display: none;
   }
   .overlay-featured-info {
@@ -515,13 +528,7 @@ p {
 }
 
 .more-portfolios-background {
-  position: fixed;
-  z-index: -3;
-}
-
-.more-portfolios-background img {
-  width: 110%;
-  margin-top: -2000px;
+  display: none;
 }
 
 .more-portfolios-section-title {
@@ -548,6 +555,18 @@ p {
     line-height: 66px;
     color: #3537E6;
     width: 650px;
+  }
+  .more-portfolios-background {
+    display: block;
+    position: fixed;
+    z-index: -3;
+    top: 0;
+    vertical-align: top;
+    width: 125%;
+  }
+  .more-portfolios-background img {
+    width: 115%;
+    transform: translate3d(-10%, 0, 0);
   }
 }
 
@@ -670,7 +689,7 @@ p {
   letter-spacing: 18%;
   text-transform: uppercase;
   color: #3537E6;
-  padding: 12px 0 0 20px;
+  padding: 2px 0 10px 20px;
 }
 
 .page-buttons-container {
