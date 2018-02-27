@@ -25,6 +25,11 @@
   font-style: normal;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 ul {
     -webkit-margin-after: 0;
     -webkit-margin-before: 0;
@@ -789,14 +794,9 @@ p {
 
 @media (min-width: 950px) {
   .more-portfolios-layout {
-    max-width: 1000px;
-    padding-left: 200px;
-    padding-right: 146px;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: auto;
-    margin-left: auto;
   }
   .individual-portfolio {
     padding-right: 64px;
@@ -812,6 +812,10 @@ p {
 @media (min-width: 1200px) {
   .more-portfolios-layout {
     width: auto;
+    padding-right: 146px;
+    padding-left: 200px;
+    max-width: 1000px;
+    }
   }
   .individual-portfolio {
     padding-right: 64px;
