@@ -150,6 +150,14 @@ p {
   float: right;
 }
 
+.enroll-button:hover {
+  background-color: rgba(243, 182, 79, .9);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
 .enroll-button h4 {
   color: #fff;
   text-align: center;
@@ -731,8 +739,10 @@ p {
 
 .page-buttons-container {
   height: 104px;
-  width: 100%;
-  max-width: 1639px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1676px;
 }
 
 .portfolio-page-button {
@@ -751,12 +761,10 @@ p {
 
 .previous-button {
   float: left;
-  margin-left: 30px;
 }
 
 .next-button {
   float: right;
-  margin-right: 30px;
 }
 
 @media (min-width: 768px) {
@@ -784,12 +792,6 @@ p {
   .page-buttons-container {
     height: 144px;
   }
-  .previous-button {
-    margin-left: 64px;
-  }
-  .next-button {
-    margin-right: 64px;
-  }
 }
 
 @media (min-width: 950px) {
@@ -800,12 +802,6 @@ p {
   }
   .individual-portfolio {
     padding-right: 64px;
-  }
-  .previous-button {
-    margin-left: 200px;
-  }
-  .next-button {
-    margin-right: 200px;
   }
 }
 
@@ -828,22 +824,23 @@ p {
   }
 }
 
-@media (min-width: 1750px) {
+@media (min-width: 1850px) {
+  .more-portfolios-layout {
+    max-width: 1400px;
+    padding-left: 64px;
+    padding-right: 0;
+  }
   .previous-button {
     margin-left: 0;
   }
   .next-button {
     margin-right: 0;
   }
-  .page-buttons-container {
-    margin-right: auto;
-    margin-left: auto;
-  }
 }
 
 @media (min-width: 2160px) {
   .more-portfolios-layout {
-    width: 1639px;
+    max-width: 1740px;
   }
 }
 
