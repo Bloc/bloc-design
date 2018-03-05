@@ -389,6 +389,15 @@ p {
   #amy-d-featured {
     background-image: url(../assets/amy-d.jpg);
   }
+  #miri-y-featured {
+    background-image: url(../assets/miri-y.jpg);
+  }
+  #andrew-l-featured {
+    background-image: url(../assets/andrew-l.jpg);
+  }
+  #noelle-l-featured {
+    background-image: url(../assets/noelle-l.jpg);
+  }
   #edward-l-featured {
     background-image: url(../assets/edward-l.png);
   }
@@ -768,9 +777,30 @@ p {
 }
 
 @media (min-width: 768px) {
-  .more-portfolios-layout {
-    padding-top: 0;
+  .page-buttons-container {
+    height: 144px;
   }
+}
+
+@media (min-width: 850px) {
+  .more-portfolios-layout {
+    width: 90%;
+    flex-wrap: wrap;
+    padding-top: 0;
+    padding-left: 64px;
+    flex-direction: row;
+    justify-content: space-between;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .individual-portfolio {
+    padding-right: 64px;
+  }
+}
+
+@media (min-width: 950px) {
   .individual-portfolio-student-photo {
     width: 88px;
     height: 88px;
@@ -789,20 +819,6 @@ p {
   .individual-portfolio-info {
     width: 344px;
   }
-  .page-buttons-container {
-    height: 144px;
-  }
-}
-
-@media (min-width: 950px) {
-  .more-portfolios-layout {
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .individual-portfolio {
-    padding-right: 64px;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -812,10 +828,6 @@ p {
     padding-left: 200px;
     max-width: 1000px;
     }
-  }
-  .individual-portfolio {
-    padding-right: 64px;
-  }
 }
 
 @media (min-width: 1550px) {
