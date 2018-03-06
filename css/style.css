@@ -26,21 +26,11 @@
 }
 
 * {
+  -webkit-margin-after: 0;
+  -webkit-margin-before: 0;
+  -webkit-padding-start: 0;
   margin: 0;
   padding: 0;
-}
-
-ul {
-    -webkit-margin-after: 0;
-    -webkit-margin-before: 0;
-    -webkit-padding-start: 0;
-    padding: 0;
-    margin: 0;
-    text-align: left;
-    top:0;
-    right: 0;
-    bottom: 0;
-    left: 0;
 }
 
 body {
@@ -148,6 +138,8 @@ p {
   background-color: #F3B64F;
   border-radius: 3px;
   float: right;
+  position: relative;
+  clear: none;
 }
 
 .enroll-button:hover {
@@ -176,12 +168,12 @@ p {
   }
 
   .header-one-half-left {
-    width: 400px;
+    width: 368px;
     margin-left: 64px;
     display: -webkit-inline-box;
   }
   .header-one-half-right {
-    width: 200px;
+    width: 250px;
     margin-right: 64px;
   }
   .header-links h4 {
@@ -189,9 +181,15 @@ p {
     padding-right: 36px;
     margin-top: 12px;
   }
+  #blog-link {
+    padding-right: 0;
+  }
   .log-in-link {
-    display: -webkit-inline-box;
+    display: inline-block;
     margin-top: 12px;
+    margin-left: 50px;
+    position: relative;
+    clear: none;
   }
 }
 
@@ -262,6 +260,20 @@ p {
   padding-left: 30px;
   z-index: -2;
 }
+
+.notch {
+  display: block;
+  z-index: 5;
+  position: absolute;
+  margin-top: -9.5px;
+  margin-left: 30px;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 10px solid #3537E6;
+}
+
 
 #featured-portfolio-mobile-info-last {
   display: block;
@@ -337,6 +349,9 @@ p {
     overflow: hidden;
   }
   .featured-portfolio-mobile-info {
+    display: none;
+  }
+  .notch {
     display: none;
   }
   #featured-portfolio-mobile-info-last {
@@ -757,7 +772,7 @@ p {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1676px;
+  max-width: 1755px;
 }
 
 .portfolio-page-button {
@@ -799,6 +814,7 @@ p {
 @media (min-width: 850px) {
   .more-portfolios-layout {
     width: 90%;
+    max-width: 900px;
     flex-wrap: wrap;
     padding-top: 0;
     padding-left: 64px;
@@ -815,13 +831,19 @@ p {
 }
 
 @media (min-width: 950px) {
-  .individual-portfolio-student-photo {
+    .individual-portfolio-student-photo {
     width: 88px;
     height: 88px;
     margin-bottom: -44px;
   }
   .individual-portfolio-student-photo img {
     height: 88px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .more-portfolios-layout {
+    max-width: none;
   }
 }
 
@@ -836,7 +858,7 @@ p {
 
 @media (min-width: 2100px) {
   .more-portfolios-layout {
-    max-width: 1740px;
+    max-width: 1820px;
   }
 }
 
