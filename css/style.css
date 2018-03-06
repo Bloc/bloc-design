@@ -580,6 +580,10 @@ p {
   transition: all 0.2s ease-in-out;
 }
 
+.more-portfolios-section a {
+  text-decoration: none;
+}
+
 .more-portfolios-background {
   display: none;
 }
@@ -635,6 +639,10 @@ p {
 
 @media (min-width: 1600px) {
   .more-portfolios-section-title {
+    background: transparent;
+    padding-left: 0;
+  }
+  .more-portfolios-section-title {
     max-width: 2160px;
     padding-left: 0;
     margin-left: auto;
@@ -654,7 +662,7 @@ p {
   flex-direction: column;
   padding-top: 40px;
   padding-bottom: 40px;
-  width: 314px;
+  width: 315px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -683,8 +691,8 @@ p {
 }
 
 .individual-portfolio-screenshot {
-  width: 314px;
-  height: 206.8px;
+  width: 315px;
+  height: 200px;
   overflow: hidden;
   border-top: 2px solid #CBEBCB;
   border-right: 2px solid #CBEBCB;
@@ -702,14 +710,12 @@ p {
 }
 
 .individual-portfolio-screenshot img {
-  height: 206.8px;
-  left: 8%;
-  transform: translateX(-8%);
+  width: 315px;
 }
 
 .individual-portfolio-info {
-  height: 110px;
-  width: 314px;
+  height: 108px;
+  width: 315px;
   border-right: 2px solid #CBEBCB;
   border-bottom: 2px solid #CBEBCB;
   border-left: 2px solid #CBEBCB;
@@ -729,7 +735,7 @@ p {
 .individual-portfolio-info h3 {
   font-size: 18px;
   color: #4D4F4D;
-  padding: 6px 0 0 20px;
+  padding: 8px 0 0 20px;
 }
 
 .individual-portfolio-city {
@@ -743,7 +749,7 @@ p {
   letter-spacing: 18%;
   text-transform: uppercase;
   color: #3537E6;
-  padding: 2px 0 10px 20px;
+  padding: 1px 0 10px 20px;
 }
 
 .page-buttons-container {
@@ -759,6 +765,14 @@ p {
   height: 44px;
   background-color: #3537E6;
   border-radius: 3px;
+}
+
+.portfolio-page-button:hover {
+  background-color: rgba(53, 55, 230, .9);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .portfolio-page-button h4 {
@@ -809,39 +823,9 @@ p {
   .individual-portfolio-student-photo img {
     height: 88px;
   }
-  .individual-portfolio-screenshot {
-    width: 344px;
-    height: 226.46px;
-  }
-  .individual-portfolio-screenshot img {
-    height: 226.46px;
-  }
-  .individual-portfolio-info {
-    width: 344px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .more-portfolios-layout {
-    width: auto;
-    padding-right: 146px;
-    padding-left: 200px;
-    max-width: 1000px;
-    }
-}
-
-@media (min-width: 1550px) {
-  .more-portfolios-layout {
-    max-width: 1639px;
-  }
 }
 
 @media (min-width: 1850px) {
-  .more-portfolios-layout {
-    max-width: 1400px;
-    padding-left: 64px;
-    padding-right: 0;
-  }
   .previous-button {
     margin-left: 0;
   }
@@ -850,7 +834,7 @@ p {
   }
 }
 
-@media (min-width: 2160px) {
+@media (min-width: 2100px) {
   .more-portfolios-layout {
     max-width: 1740px;
   }
