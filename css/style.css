@@ -728,8 +728,14 @@ p {
   width: 315px;
 }
 
+#chris-k-photo img {
+  width: 90px;
+  height: auto;
+  margin-top: -16px;
+}
+
 .individual-portfolio-info {
-  height: 108px;
+  height: 112px;
   width: 315px;
   border-right: 2px solid #CBEBCB;
   border-bottom: 2px solid #CBEBCB;
@@ -764,7 +770,7 @@ p {
   letter-spacing: 18%;
   text-transform: uppercase;
   color: #3537E6;
-  padding: 1px 0 10px 20px;
+  padding: 1px 0 8px 20px;
 }
 
 .page-buttons-container {
