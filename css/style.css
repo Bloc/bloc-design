@@ -104,7 +104,6 @@ p {
   width: 50px;
   float: left;
   position: relative;
-  transition: 0.5s ease;
 }
 
 .header-one-half-right {
@@ -113,7 +112,6 @@ p {
   margin-right: 30px;
   width: 122px;
   float: right;
-  transition: 0.5s ease;
 }
 
 #logo {
