@@ -165,19 +165,9 @@ p {
     margin-top: -800px;
   }
 
-  .header-one-half-left {
-    width: 368px;
-    margin-left: 64px;
-    display: -webkit-inline-box;
-  }
   .header-one-half-right {
     width: 250px;
     margin-right: 64px;
-  }
-  .header-links h4 {
-    display: inline-block;
-    padding-right: 36px;
-    margin-top: 12px;
   }
   #blog-link {
     padding-right: 0;
@@ -188,6 +178,19 @@ p {
     margin-left: 50px;
     position: relative;
     clear: none;
+  }
+}
+
+@media (min-width: 915px) {
+  .header-one-half-left {
+  width: 455px;
+  margin-left: 64px;
+  display: -webkit-inline-box;
+  }
+  .header-links h4 {
+    display: inline-block;
+    padding-right: 36px;
+    margin-top: 12px;
   }
 }
 
