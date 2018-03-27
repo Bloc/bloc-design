@@ -952,7 +952,9 @@ p {
 
 .book-cover {
   width: 200px;
-  height: 306px;
+  height: auto;
+  float: left;
+  padding-bottom: 20px;
 }
 
 .book-cover img {
@@ -961,6 +963,7 @@ p {
   vertical-align: top;
   z-index: 1;
 }
+
 
 .book h2 {
   font-size: 16px;
@@ -990,10 +993,11 @@ p {
 
 .buy-book-overlay {
   position: absolute;
+  float: left;
+  bottom: 0;
   z-index: 2;
   width: 200px;
   height: 52px;
-  margin-top: 254px;
   background: #F3B64F;
   opacity: 0;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1001,9 +1005,10 @@ p {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.book:hover .buy-book-overlay {
+
+/*.book:hover .buy-book-overlay {
   opacity: 1;
-}
+}*/
 
 @media (min-width: 768px) {
   #bloc-logo-mobile {
