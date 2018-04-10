@@ -960,7 +960,8 @@ p {
   width: 200px;
   height: auto;
   float: left;
-  padding-bottom: 20px;
+  margin-bottom: 16px;
+  border-bottom: 4px solid white;
 }
 
 .book-cover img {
@@ -1012,9 +1013,9 @@ p {
   transition: all 0.2s ease-in-out;
 }
 
-/*.book:hover .buy-book-overlay {
+.book:hover .buy-book-overlay {
   opacity: 1;
-}*/
+}
 
 @media (min-width: 768px) {
   #bloc-logo-mobile {
