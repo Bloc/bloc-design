@@ -998,25 +998,6 @@ p {
   padding-bottom: 40px;
 }
 
-.buy-book-overlay {
-  position: absolute;
-  float: left;
-  bottom: 0;
-  z-index: 2;
-  width: 200px;
-  height: 52px;
-  background: #F3B64F;
-  opacity: 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.book:hover .buy-book-overlay {
-  opacity: 1;
-}
-
 @media (min-width: 768px) {
   #bloc-logo-mobile {
     display: none;
